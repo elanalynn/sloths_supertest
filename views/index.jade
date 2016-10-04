@@ -2,4 +2,9 @@ extends layout
 
 block content
   h1= title
-  p Welcome to #{title}
+  p Welcome to World of #{title}
+
+  each sloth in sloths
+    p= sloth.name
+    p= sloth.age
+    img(src=sloth.image)
